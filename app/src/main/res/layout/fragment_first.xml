@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/container1"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FirstFragment">
+<ImageView
+    android:scaleType="fitXY"
+    android:src="@drawable/rectangle_1"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"/>
+<TextView
+ android:layout_marginStart="130dp"
+   android:layout_marginTop="25dp"
+    android:textColor="@color/white"
+    android:textSize="28sp"
+    android:text="Now Playing"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Talk Me Down"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp"
+app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+       />
+
+
+
+</FrameLayout>
